@@ -1,9 +1,11 @@
 # uwRMP
 Rate My Professors extension for the UW course portal
 
-
-
 Pulls data from the Rate My Professors GraphQL API (https://www.ratemyprofessors.com/graphql)
+
+## View Rate My Professor info directly within University of Washington's MyPlan
+<img src="./assets/RMPuw_ss.png" alt="View RMP info directly within MyPlan" width="550" height="350">
+
 
 ## Modifying to use with other university course portals
 
