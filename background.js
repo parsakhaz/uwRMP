@@ -142,7 +142,7 @@ async function sendProfessorInfo(professorName) {
 	}
 }
 
-chrome.runtime.onConnect.addListener((port) => {
+browser.runtime.onConnect.addListener((port) => {
 	port.onMessage.addListener((request) => {
 		sendProfessorInfo(request.professorName)
 			.then((professor) => {

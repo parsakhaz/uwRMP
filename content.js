@@ -18,7 +18,7 @@ function appendRMP() {
 			professorLinks.forEach(async (link) => {
 				const professorName = link.textContent;
 				try {
-					const port = chrome.runtime.connect({ name: 'professor-rating' });
+					const port = browser.runtime.connect({ name: 'professor-rating' });
 					port.postMessage({ professorName });
 					port.onMessage.addListener((teacher) => {
 						// console.log('Received response for professor:', teacher);
