@@ -8,9 +8,16 @@
 	},
 	"applications": {
 		"gecko": {
-			"strict_min_version": "88.0"
+      "id": "khazapar7@gmail.com",
+			"strict_min_version": "42.0"
 		}
 	},
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "khazapar7@gmail.com",
+      "strict_min_version": "42.0"
+    }
+  },  
 	"permissions": ["activeTab", "webRequest", "webNavigation", "tabs", "https://myplan.uw.edu/course/*", "https://www.ratemyprofessors.com/*"],
 	"content_scripts": [
 		{
