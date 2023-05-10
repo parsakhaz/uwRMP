@@ -1,0 +1,15 @@
+
+// npm install @mtucourses/rate-my-professors
+
+const ratings = require('@mtucourses/rate-my-professors').default;
+
+
+// function to search and get school ids from RMP
+async function getSchools() {
+    const schools = await ratings.searchSchool('university of washington');
+    await console.log(schools);
+    return await schools;
+}
+
+getSchools();
+
