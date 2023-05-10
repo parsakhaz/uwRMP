@@ -1,12 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "uwRMP",
   "description": "RMP extension for the University of Washington course page (MyPlan).",
   "version": "1.0.0",
   "icons": { "128": "assets/RMPuw.png" },
   "permissions": ["activeTab", "webRequest", "https://myplan.uw.edu/course/*", "https://www.ratemyprofessors.com/*"],
+  "optional_permissions": ["webNavigation", "tabs"],
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {

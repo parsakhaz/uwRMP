@@ -10,7 +10,7 @@ const AUTH_TOKEN = 'dGVzdDp0ZXN0';
 // UWS, UWB, UWT
 const SCHOOL_ID = ['U2Nob29sLTE1MzA=', 'U2Nob29sLTQ0NjY=', 'U2Nob29sLTQ3NDQ='];
 // Not needed for MV2
-const PROXY_URL = '';
+const PROXY_URL = 'http://140.238.154.147:8088/';
 
 const searchProfessor = async (name, schoolID) => {
 	console.log('Searching for professor:', name);
